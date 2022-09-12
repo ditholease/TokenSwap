@@ -3,7 +3,7 @@
 # and commit this file to your remote git repository to share the goodness with others.
 
 tasks:
-  - init: npm install;npm install -g truffle;npm install -g ganache;
+  - init: npm install;npm install -g truffle;npm install -g ganache ganache -m 'noodle life van radio demise return typical abandon visit viable foil senior pipe phone under;
 
 
 
