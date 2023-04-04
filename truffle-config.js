@@ -21,13 +21,10 @@ module.exports = {
       port: 7545,            // Standard Ethereum port (default: none)
       network_id: 5777,       // Any network (default: none)
     },
-    rinkeby: {
-      provider: () => new HDWalletProvider(mnemonic, `wss://rinkeby.infura.io/ws/v3/${process.env.INFURA_KEY}`),
-      network_id: 4,
+    roxycoin: {
+      provider: () => new HDWalletProvider(mnemonic, `https://rpc.roxycoin.be`),
+      network_id: "*",
       gas: 5500000,
-      confirmations: 2,    // # of confs to wait between deployments. (default: 0)
-      timeoutBlocks: 200,  // # of blocks before a deployment times out  (minimum/default: 50)
-      skipDryRun: true     // Skip dry run before migrations? (default: false for public nets )
     },
   },
   compilers: {
